@@ -144,16 +144,19 @@ export async function getPostById(postId: string): Promise<Post> {
   return handleResponse<Post>(response)
 }
 
-
-function keepAlive(): void {
-  // Sends a GET request to API_BASE_URL/isalive every 7-12 minutes randomly to check if the server is alive
-  const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60 * 1000; // Random interval between 7-12 minutes
+// Keep-alive function to prevent Render server from sleeping
+export function startKeepAlive(): void {
+  if (typeof window === "undefined") return // Only run on client
+  
+  // Send initial ping
+  fetch(`${API_BASE_URL}/isalive`).catch(() => {})
+  
+  // Then ping every 10 minutes
   setInterval(async () => {
     try {
-      await fetch(`${API_BASE_URL}/isalive`);
-      console.log("Server is alive");
+      await fetch(`${API_BASE_URL}/isalive`)
     } catch (error) {
-      console.error("Failed to check if server is alive:", error);
+      // Silent fail - server might be waking up
     }
-  }, interval);
+  }, 10 * 60 * 1000) // 10 minutes
 }
