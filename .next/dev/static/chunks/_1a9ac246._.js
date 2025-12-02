@@ -289,16 +289,21 @@ function startKeepAlive() {
     if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
     ;
      // Only run on client
-    // Send initial ping
-    fetch(`${API_BASE_URL}/isalive`).catch(()=>{});
-    // Then ping every 10 minutes
-    setInterval(async ()=>{
-        try {
-            await fetch(`${API_BASE_URL}/isalive`);
-        } catch (error) {
-        // Silent fail - server might be waking up
-        }
-    }, 10 * 60 * 1000); // 10 minutes
+    const pingServer = ()=>{
+        fetch(`${API_BASE_URL}/is_alive`).catch(()=>{});
+    };
+    const scheduleNextPing = ()=>{
+        // Random interval between 7-12 minutes
+        const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60;
+        setTimeout(()=>{
+            pingServer();
+            scheduleNextPing(); // Schedule next ping after this one
+        }, interval);
+    };
+    // Send initial ping immediately
+    pingServer();
+    // Start the recurring pings
+    scheduleNextPing();
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);

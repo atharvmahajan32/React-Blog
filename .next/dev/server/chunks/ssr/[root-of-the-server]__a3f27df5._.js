@@ -277,6 +277,8 @@ function startKeepAlive() {
     if ("TURBOPACK compile-time truthy", 1) return; // Only run on client
     //TURBOPACK unreachable
     ;
+    const pingServer = undefined;
+    const scheduleNextPing = undefined;
 }
 }),
 "[project]/components/keep-alive.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {

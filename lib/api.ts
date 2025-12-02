@@ -148,15 +148,23 @@ export async function getPostById(postId: string): Promise<Post> {
 export function startKeepAlive(): void {
   if (typeof window === "undefined") return // Only run on client
   
-  // Send initial ping
-  fetch(`${API_BASE_URL}/isalive`).catch(() => {})
+  const pingServer = () => {
+    fetch(`${API_BASE_URL}/is_alive`).catch(() => {})
+  }
   
-  // Then ping every 10 minutes
-  setInterval(async () => {
-    try {
-      await fetch(`${API_BASE_URL}/isalive`)
-    } catch (error) {
-      // Silent fail - server might be waking up
-    }
-  }, 10 * 60 * 1000) // 10 minutes
+  const scheduleNextPing = () => {
+    // Random interval between 7-12 minutes
+    const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60 * 1000
+    setTimeout(() => {
+      pingServer()
+      scheduleNextPing() // Schedule next ping after this one
+    }, interval)
+  }
+  
+  // Send initial ping immediately
+  pingServer()
+  
+  // Start the recurring pings
+  scheduleNextPing()
 }
+

@@ -59,7 +59,7 @@ export default function HomePage() {
           </h1>
           
           <p className="font-sans text-gray-600 text-lg md:text-xl mb-10 max-w-2xl mx-auto animate-fade-in-up stagger-1 opacity-0">
-            Elegant insights on modern living, timeless design, and the art of intentional living
+            "Sharing personal insights and lessons from my educational journey."
           </p>
           
           <div className="animate-fade-in-up stagger-2 opacity-0">

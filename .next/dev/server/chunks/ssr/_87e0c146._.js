@@ -466,7 +466,7 @@ function HomePage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "font-sans text-gray-600 text-lg md:text-xl mb-10 max-w-2xl mx-auto animate-fade-in-up stagger-1 opacity-0",
-                                children: "Elegant insights on modern living, timeless design, and the art of intentional living"
+                                children: '"Sharing personal insights and lessons from my educational journey."'
                             }, void 0, false, {
                                 fileName: "[project]/app/home/page.tsx",
                                 lineNumber: 61,

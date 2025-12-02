@@ -28,8 +28,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Atharv's Weekly Journal",
-  description: "Elegant insights on modern living and design",
-  generator: "v0.app",
+  description: "Sharing personal insights from my educational journey.",
   icons: {
     icon: "/favicon.png",
     apple: "/favicon.png",
