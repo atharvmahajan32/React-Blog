@@ -154,7 +154,7 @@ export function startKeepAlive(): void {
   
   const scheduleNextPing = () => {
     
-    const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60 * 10
+    const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60 * 200
     setTimeout(() => {
       pingServer()
       scheduleNextPing() 
