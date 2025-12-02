@@ -224,7 +224,7 @@ export default function AdminDashboard() {
         <div className="container mx-auto px-4 py-5">
           <div className="flex items-center justify-between">
             <Link href="/home" className="group transition-all duration-300 hover:scale-105">
-              <Image src="/favicon.png" alt="AM Journal" width={40} height={40} />
+              <Image src="/favicon.png" alt="Atharv's Weekly Journal" width={40} height={40} />
             </Link>
             <div className="flex items-center gap-4">
               <span className="font-sans text-sm text-gray-500 bg-white/50 px-3 py-1 rounded-full border border-[#E5E5E0]">

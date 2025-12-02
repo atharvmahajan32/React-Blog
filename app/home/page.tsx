@@ -52,9 +52,9 @@ export default function HomePage() {
           </div>
           
           <h1 className="font-serif text-5xl md:text-7xl font-bold text-black mb-6 tracking-tight animate-fade-in-up">
-            Welcome to the
+            Welcome to
             <span className="block mt-2 bg-gradient-to-r from-black via-gray-700 to-black bg-clip-text text-transparent">
-              AM Journal
+              Atharv&apos;s Weekly Journal
             </span>
           </h1>
           

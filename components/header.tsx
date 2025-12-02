@@ -29,7 +29,7 @@ export function Header({ showNav = true }: HeaderProps) {
           >
             <Image 
               src="/favicon.png" 
-              alt="AM Journal" 
+              alt="Atharv's Weekly Journal" 
               width={60} 
               height={60}
               className="mx-auto"

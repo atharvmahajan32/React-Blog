@@ -16,18 +16,10 @@ export default function AboutPage() {
         
         <div className="container mx-auto px-4 text-center relative">
           {/* Decorative logo */}
-          <div className="animate-fade-in mb-8">
-            <Image
-              src="/favicon.png"
-              alt="AM Journal"
-              width={80}
-              height={80}
-              className="mx-auto opacity-80"
-            />
-          </div>
+          
           
           <h1 className="animate-fade-in-up font-serif text-4xl md:text-6xl font-bold text-black mb-6 text-balance">
-            About AM Journal
+            About Atharv&apos;s Weekly Journal
           </h1>
           <p className="animate-fade-in-up animation-delay-200 font-sans text-gray-600 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             A space for elegant insights on modern living and timeless design
@@ -54,12 +46,12 @@ export default function AboutPage() {
               </div>
               <div className="pl-0 md:pl-14">
                 <p className="font-sans text-gray-600 leading-relaxed mb-4 text-lg">
-                  AM Journal was founded with a simple yet profound vision: to create a sanctuary for those who appreciate
+                  Atharv&apos;s Weekly Journal was created with a simple yet profound vision: to create a sanctuary for those who appreciate
                   the finer things in life. In a world overwhelmed by noise and excess, we believe in the transformative
                   power of simplicity.
                 </p>
                 <p className="font-sans text-gray-600 leading-relaxed text-lg">
-                  Our name, AM, represents the quiet hours of morning—a time for reflection, intention, and the
+                  This journal represents the quiet hours of morning—a time for reflection, intention, and the
                   appreciation of beauty in its purest form. It&apos;s in these moments that we find clarity and
                   connection to what truly matters.
                 </p>
@@ -129,7 +121,7 @@ export default function AboutPage() {
             <div className="animate-fade-in-up animation-delay-800 group text-center bg-gradient-to-b from-[#F5F5F0] to-transparent rounded-2xl p-10 md:p-14">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-black mb-6">Join Our Community</h2>
               <p className="font-sans text-gray-600 leading-relaxed text-lg max-w-xl mx-auto">
-                Whether you&apos;re a seasoned minimalist or simply curious about living with more intention, AM Journal
+                Whether you&apos;re a seasoned minimalist or simply curious about living with more intention, Atharv&apos;s Weekly Journal
                 welcomes you. We invite you to explore, reflect, and discover the beauty that emerges when we strip away
                 the unnecessary.
               </p>

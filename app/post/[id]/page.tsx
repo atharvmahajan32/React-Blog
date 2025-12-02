@@ -146,10 +146,10 @@ export default function PostPage() {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center font-serif text-xl">
-                        AM
+                        A
                       </div>
                       <div>
-                        <p className="font-sans font-semibold text-black">AM Journal</p>
+                        <p className="font-sans font-semibold text-black">Atharv&apos;s Weekly Journal</p>
                         <p className="font-sans text-sm text-gray-500">Elegant insights on modern living</p>
                       </div>
                     </div>

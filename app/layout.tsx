@@ -27,7 +27,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "AM Journal",
+  title: "Atharv's Weekly Journal",
   description: "Elegant insights on modern living and design",
   generator: "v0.app",
   icons: {

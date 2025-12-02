@@ -77,7 +77,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="relative py-12 text-center animate-fade-in">
         <div className="relative inline-block">
-          <Image src="/favicon.png" alt="AM Journal" width={80} height={80} className="mx-auto" />
+          <Image src="/favicon.png" alt="Atharv's Weekly Journal" width={80} height={80} className="mx-auto" />
           <div className="absolute -top-2 -right-2 animate-float">
             <Sparkles className="w-5 h-5 text-black/30" />
           </div>
@@ -90,9 +90,9 @@ export default function LandingPage() {
         <div className="w-full max-w-md animate-fade-in-up">
           <div className="text-center mb-10">
             <h2 className="font-serif text-4xl font-bold text-black mb-4 tracking-tight">
-              Welcome to the
+              Welcome to
               <span className="block text-3xl mt-1 bg-gradient-to-r from-black/80 via-black to-black/80 bg-clip-text text-transparent">
-                AM Journal
+                Atharv&apos;s Weekly Journal
               </span>
             </h2>
             <p className="font-sans text-gray-500 text-lg">Tell us a bit about yourself to continue</p>
@@ -129,7 +129,7 @@ export default function LandingPage() {
                   onChange={(e) => setWhy(e.target.value)}
                   onFocus={() => setIsFocused('why')}
                   onBlur={() => setIsFocused(null)}
-                  placeholder="Tell us what brings you to AM Journal..."
+                  placeholder="Tell us what brings you here..."
                   rows={4}
                   className="bg-white/80 backdrop-blur-sm border-[#E5E5E0] focus:border-black focus:ring-2 focus:ring-black/10 rounded-xl py-4 px-4 resize-none transition-all duration-300 shadow-sm focus:shadow-md"
                   disabled={isLoading}
@@ -173,7 +173,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="relative py-8 text-center animate-fade-in">
         <div className="w-16 h-px bg-gradient-to-r from-transparent via-black/20 to-transparent mx-auto mb-4" />
-        <p className="font-sans text-sm text-gray-400">© {new Date().getFullYear()} AM Journal. All rights reserved.</p>
+        <p className="font-sans text-sm text-gray-400">© {new Date().getFullYear()} Atharv&apos;s Weekly Journal. All rights reserved.</p>
       </footer>
     </div>
   )

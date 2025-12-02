@@ -16,7 +16,7 @@ export function Footer() {
 
           {/* Copyright */}
           <div className="font-sans text-sm text-black/50">
-            © {new Date().getFullYear()} AM Journal. All rights reserved.
+            © {new Date().getFullYear()} Atharv&apos;s Weekly Journal. All rights reserved.
           </div>
         </div>
       </div>
