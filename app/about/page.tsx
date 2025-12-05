@@ -118,9 +118,17 @@ export default function AboutPage() {
 
             {/* Connect */}
             <div className="animate-fade-in-up animation-delay-800 group text-center bg-gradient-to-b from-[#F5F5F0] to-transparent rounded-2xl p-10 md:p-14">
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-black mb-6">Let&apos;s Connect</h2>
+              <a 
+                href="https://calendly.com/m-atharv063/new-meeting?month=2025-12" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group relative font-serif text-2xl md:text-3xl font-bold text-black mb-6 inline-block cursor-pointer"
+              >
+                Let&apos;s Connect
+                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-black rounded-full transition-all duration-300 group-hover:w-full" />
+              </a>
               <p className="font-sans text-gray-600 leading-relaxed text-lg max-w-xl mx-auto mb-4">
-                Thanks for being here! Whether you&apos;re following along with my journey,
+                Thanks for being here! Whether you&apos;re following along with my journey
                 or simply stumbled upon this corner of the internet, I&apos;m glad you made it.
               </p>
               <p className="font-sans text-gray-600 leading-relaxed text-lg max-w-xl mx-auto">
