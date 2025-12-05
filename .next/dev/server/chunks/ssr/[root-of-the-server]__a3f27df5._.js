@@ -177,7 +177,7 @@ __turbopack_context__.s([
     "updatePost",
     ()=>updatePost
 ]);
-const API_BASE_URL = ("TURBOPACK compile-time value", "https://fastapi-blog-j0lu.onrender.com") || "http://localhost:8000";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 // Helper to get auth headers for Form data
 function getAuthHeaders() {
     const token = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : null;

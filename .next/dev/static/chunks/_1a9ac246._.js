@@ -185,7 +185,7 @@ __turbopack_context__.s([
     ()=>updatePost
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.3_@babel+core@7.2_a6e7fe7b2107bfd5c9e45031e322c5c3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const API_BASE_URL = ("TURBOPACK compile-time value", "https://fastapi-blog-j0lu.onrender.com") || "http://localhost:8000";
+const API_BASE_URL = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 // Helper to get auth headers for Form data
 function getAuthHeaders() {
     const token = ("TURBOPACK compile-time truthy", 1) ? localStorage.getItem("admin_token") : "TURBOPACK unreachable";
@@ -293,11 +293,10 @@ function startKeepAlive() {
         fetch(`${API_BASE_URL}/is_alive`).catch(()=>{});
     };
     const scheduleNextPing = ()=>{
-        // Random interval between 7-12 minutes
-        const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60;
+        const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60 * 200;
         setTimeout(()=>{
             pingServer();
-            scheduleNextPing(); // Schedule next ping after this one
+            scheduleNextPing();
         }, interval);
     };
     // Send initial ping immediately

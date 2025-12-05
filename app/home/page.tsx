@@ -69,7 +69,7 @@ export default function HomePage() {
             >
               <a href="#posts" className="inline-flex items-center gap-2">
                 Explore Posts
-                <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-300" />
+                <ArrowDown className="w-4 h-4 mt-0.5 group-hover:translate-y-1 transition-transform duration-300" />
               </a>
             </Button>
           </div>

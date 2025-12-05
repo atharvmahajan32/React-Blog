@@ -4,7 +4,6 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import { AuthProvider } from "@/components/auth-provider"
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider"
-import { KeepAlive } from "@/components/keep-alive"
 import { Toaster } from "@/components/ui/toaster"
 import "./globals.css"
 
@@ -49,7 +48,6 @@ export default function RootLayout({
             <Toaster />
           </AuthProvider>
         </SmoothScrollProvider>
-        <KeepAlive />
         <Analytics />
       </body>
     </html>

@@ -16,7 +16,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$
 ;
 ;
 ;
-const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$class$2d$variance$2d$authority$40$0$2e$7$2e$1$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
+const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$class$2d$variance$2d$authority$40$0$2e$7$2e$1$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center text-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
     variants: {
         variant: {
             default: 'bg-primary text-primary-foreground hover:bg-primary/90',
@@ -27,9 +27,9 @@ const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_
             link: 'text-primary underline-offset-4 hover:underline'
         },
         size: {
-            default: 'h-9 px-4 py-2 has-[>svg]:px-3',
-            sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',
-            lg: 'h-10 rounded-md px-6 has-[>svg]:px-4',
+            default: 'h-9 px-4 py-2',
+            sm: 'h-8 rounded-md gap-1.5 px-3',
+            lg: 'h-10 rounded-md px-6',
             icon: 'size-9',
             'icon-sm': 'size-8',
             'icon-lg': 'size-10'
@@ -180,7 +180,8 @@ __turbopack_context__.s([
     "updatePost",
     ()=>updatePost
 ]);
-const API_BASE_URL = "http://localhost:8000";
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.3_@babel+core@7.2_a6e7fe7b2107bfd5c9e45031e322c5c3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+const API_BASE_URL = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 // Helper to get auth headers for Form data
 function getAuthHeaders() {
     const token = ("TURBOPACK compile-time truthy", 1) ? localStorage.getItem("admin_token") : "TURBOPACK unreachable";
@@ -408,7 +409,7 @@ function LandingPage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/favicon.png",
-                                alt: "AM Journal",
+                                alt: "Atharv's Weekly Journal",
                                 width: 80,
                                 height: 80,
                                 className: "mx-auto"
@@ -461,10 +462,10 @@ function LandingPage() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "font-serif text-4xl font-bold text-black mb-4 tracking-tight",
                                     children: [
-                                        "Welcome to the",
+                                        "Welcome to",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_$40$babel$2b$core$40$7$2e$2_a6e7fe7b2107bfd5c9e45031e322c5c3$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "block text-3xl mt-1 bg-gradient-to-r from-black/80 via-black to-black/80 bg-clip-text text-transparent",
-                                            children: "AM Journal"
+                                            children: "Atharv's Weekly Journal"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
                                             lineNumber: 94,
@@ -560,7 +561,7 @@ function LandingPage() {
                                                 onChange: (e)=>setWhy(e.target.value),
                                                 onFocus: ()=>setIsFocused('why'),
                                                 onBlur: ()=>setIsFocused(null),
-                                                placeholder: "Tell us what brings you to AM Journal...",
+                                                placeholder: "Tell us what brings you here...",
                                                 rows: 4,
                                                 className: "bg-white/80 backdrop-blur-sm border-[#E5E5E0] focus:border-black focus:ring-2 focus:ring-black/10 rounded-xl py-4 px-4 resize-none transition-all duration-300 shadow-sm focus:shadow-md",
                                                 disabled: isLoading
@@ -674,7 +675,7 @@ function LandingPage() {
                         children: [
                             "© ",
                             new Date().getFullYear(),
-                            " AM Journal. All rights reserved."
+                            " Atharv's Weekly Journal. All rights reserved."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.tsx",

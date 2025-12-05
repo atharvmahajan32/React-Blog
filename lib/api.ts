@@ -144,27 +144,3 @@ export async function getPostById(postId: string): Promise<Post> {
   return handleResponse<Post>(response)
 }
 
-// Keep-alive function to prevent Render server from sleeping
-export function startKeepAlive(): void {
-  if (typeof window === "undefined") return // Only run on client
-  
-  const pingServer = () => {
-    fetch(`${API_BASE_URL}/is_alive`).catch(() => {})
-  }
-  
-  const scheduleNextPing = () => {
-    
-    const interval = Math.floor(Math.random() * (12 - 7 + 1) + 7) * 60 * 200
-    setTimeout(() => {
-      pingServer()
-      scheduleNextPing() 
-    }, interval)
-  }
-  
-  // Send initial ping immediately
-  pingServer()
-  
-  // Start the recurring pings
-  scheduleNextPing()
-}
-

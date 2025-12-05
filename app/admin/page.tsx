@@ -260,7 +260,7 @@ export default function AdminDashboard() {
               }}
               className="group bg-black text-white hover:bg-black/90 rounded-full px-6 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              <Plus className="w-5 h-5 mr-2 group-hover:rotate-90 transition-transform duration-300" />
+              <Plus className="w-5 h-5 group-hover:rotate-90 transition-transform duration-300" />
               New Post
             </Button>
           </div>
