@@ -406,14 +406,14 @@ export default function AdminDashboard() {
 
       {/* Create Post Dialog */}
       <Dialog open={isCreateOpen} onOpenChange={setIsCreateOpen}>
-        <DialogContent className="bg-white">
-          <DialogHeader>
+        <DialogContent className="bg-white sm:max-w-2xl max-h-[90vh] flex flex-col overflow-hidden">
+          <DialogHeader className="shrink-0">
             <DialogTitle className="font-serif text-xl">Create New Post</DialogTitle>
             <DialogDescription className="font-sans text-gray-600">
               Add a new blog post to your journal.
             </DialogDescription>
           </DialogHeader>
-          <div className="space-y-4 py-4">
+          <div className="space-y-4 py-4 overflow-y-auto flex-1 min-h-0">
             <div className="space-y-2">
               <Label htmlFor="create-title" className="font-sans">
                 Title
@@ -435,12 +435,12 @@ export default function AdminDashboard() {
                 value={formData.content}
                 onChange={(e) => setFormData({ ...formData, content: e.target.value })}
                 placeholder="Write your post content..."
-                rows={6}
-                className="border-[#E5E5E0] resize-none"
+                rows={12}
+                className="border-[#E5E5E0] resize-none min-h-[300px]"
               />
             </div>
           </div>
-          <DialogFooter>
+          <DialogFooter className="shrink-0 border-t border-[#E5E5E0] pt-4">
             <Button variant="outline" onClick={() => setIsCreateOpen(false)} className="border-gray-300">
               Cancel
             </Button>
@@ -453,12 +453,12 @@ export default function AdminDashboard() {
 
       {/* Edit Post Dialog */}
       <Dialog open={isEditOpen} onOpenChange={setIsEditOpen}>
-        <DialogContent className="bg-white">
-          <DialogHeader>
+        <DialogContent className="bg-white sm:max-w-2xl max-h-[90vh] flex flex-col overflow-hidden">
+          <DialogHeader className="shrink-0">
             <DialogTitle className="font-serif text-xl">Edit Post</DialogTitle>
             <DialogDescription className="font-sans text-gray-600">Make changes to your blog post.</DialogDescription>
           </DialogHeader>
-          <div className="space-y-4 py-4">
+          <div className="space-y-4 py-4 overflow-y-auto flex-1 min-h-0">
             <div className="space-y-2">
               <Label htmlFor="edit-title" className="font-sans">
                 Title
@@ -480,12 +480,12 @@ export default function AdminDashboard() {
                 value={formData.content}
                 onChange={(e) => setFormData({ ...formData, content: e.target.value })}
                 placeholder="Write your post content..."
-                rows={6}
-                className="border-[#E5E5E0] resize-none"
+                rows={12}
+                className="border-[#E5E5E0] resize-none min-h-[300px]"
               />
             </div>
           </div>
-          <DialogFooter>
+          <DialogFooter className="shrink-0 border-t border-[#E5E5E0] pt-4">
             <Button variant="outline" onClick={() => setIsEditOpen(false)} className="border-gray-300">
               Cancel
             </Button>

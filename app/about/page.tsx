@@ -109,7 +109,7 @@ export default function AboutPage() {
               <div className="absolute left-0 top-0 text-8xl font-serif text-black/5 leading-none">&ldquo;</div>
               <blockquote className="relative z-10 text-center">
                 <p className="font-serif text-2xl md:text-3xl text-black italic mb-4 leading-relaxed">
-                  It is what it is.
+                  Most answers already exist; the real skill is knowing where to find them.
                 </p>
                 <cite className="font-sans text-sm text-gray-500 not-italic tracking-widest uppercase">— Ancient proverb (probably)</cite>
               </blockquote>

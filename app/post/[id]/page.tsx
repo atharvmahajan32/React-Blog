@@ -141,25 +141,31 @@ export default function PostPage() {
                   ))}
                 </div>
 
-                {/* End of Article */}
-                <div className="mt-16 pt-8 border-t border-[#E5E5E0]">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full bg-black text-white flex items-center justify-center font-serif text-xl">
-                        A
-                      </div>
-                      <div>
-                        <p className="font-sans font-semibold text-black">Atharv&apos;s Weekly Journal</p>
-                        <p className="font-sans text-sm text-gray-500">Elegant insights on modern living</p>
-                      </div>
+                {/* End of Article Marker */}
+                <div className="flex justify-center my-16">
+                  <div className="flex items-center gap-3">
+                    <div className="w-1.5 h-1.5 rounded-full bg-black/30" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-black/30" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-black/30" />
+                  </div>
+                </div>
+
+                {/* Author Card */}
+                <div className="bg-[#F5F5F0] rounded-2xl p-8 md:p-10">
+                  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                    <div className="w-16 h-16 rounded-full bg-black text-white flex items-center justify-center font-serif text-2xl shrink-0">
+                      A
                     </div>
-                    <Button 
-                      asChild 
-                      variant="outline"
-                      className="rounded-full border-black/20 hover:border-black hover:bg-black hover:text-white transition-all duration-300"
-                    >
-                      <Link href="/home#posts">More Posts</Link>
-                    </Button>
+                    <div className="text-center sm:text-left flex-1">
+                      <p className="font-serif text-xl font-bold text-black mb-1">Atharv&apos;s Weekly Journal</p>
+                      <p className="font-sans text-gray-600 mb-4">Weekly log of learnings, discoveries, and thoughts worth sharing.</p>
+                      <Button 
+                        asChild 
+                        className="rounded-full bg-black text-white hover:bg-black/90 px-6 transition-all duration-300"
+                      >
+                        <Link href="/home#posts">Read More Posts</Link>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </article>

@@ -48,7 +48,7 @@ export default function RootLayout({
             <Toaster />
           </AuthProvider>
         </SmoothScrollProvider>
-        <Analytics />
+        <Analytics /> 
       </body>
     </html>
   )

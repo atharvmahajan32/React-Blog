@@ -10,13 +10,13 @@ export function Footer() {
             href="https://athrv.me" 
             className="group inline-flex items-center gap-2 font-sans text-sm text-black/70 hover:text-black transition-colors duration-300"
           >
-            Go back to portfolio
+            Go to portfolio
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
           </a>
 
           {/* Copyright */}
           <div className="font-sans text-sm text-black/50">
-            © {new Date().getFullYear()} Atharv&apos;s Weekly Journal.
+              {new Date().getFullYear()} Atharv&apos;s Weekly Journal.
           </div>
         </div>
       </div>
